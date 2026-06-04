@@ -400,6 +400,19 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
   z-index: 0;
 }
 
+.snap-bg-number-dark {
+  position: absolute;
+  font-size: 25vw;
+  font-weight: 900;
+  color: rgba(0, 74, 153, 0.12);
+  bottom: -4vw;
+  right: 2vw;
+  pointer-events: none;
+  user-select: none;
+  line-height: 1;
+  z-index: 0;
+}
+
 .snap-bg-number--light {
   color: rgba(255, 255, 255, 0.06);
 }

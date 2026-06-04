@@ -44,7 +44,7 @@ const About = () => {
       </div>
 
       <div className="snap-section snap-section--light">
-        <div className="snap-bg-number">01</div>
+        <div className="snap-bg-number-dark">01</div>
         <div className="snap-inner snap-inner--centered">
           <div className="section-label">About David</div>
           <h2 className="section-heading">Experience You Can Trust</h2>
