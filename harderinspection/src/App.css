@@ -164,6 +164,7 @@
   justify-content: center;
   align-items: center;
   color: black;
+  height: 70px;
 }
 .header h1 {
   color: var(--color-primary);
@@ -173,8 +174,22 @@
   display: none;
 }
 
-#desktopbars {
-  background-color: red;
+.desktopbars {
+  position: absolute;
+  padding: 10px;
+  right: 10px;
+  display: flex;
+  padding: 10px;
+}
+
+.link{
+  background-color: var(--btn-primary-bg);
+  border: 2px solid var(--border-strong);
+  text-decoration: none;
+  padding: 10px;
+  color: var(--btn-primary-text);
+  border-radius: var(--radius-md);
+  font-weight: 600;
 }
 
 /* Mobile Styles */
@@ -193,4 +208,8 @@
     align-items: center;
     font-size: 25px;
   }
+
+  .desktopbars {
+display: none;
+}
 }
