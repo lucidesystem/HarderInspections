@@ -1,18 +1,16 @@
 import { useState, useEffect } from "react"; // Added hooks
-import {
-  BrowserRouter,
-  Route,
-  Routes,
-  Link,
-  useNavigate,
-} from "react-router-dom";
+import { BrowserRouter, Route, Routes, Link, useNavigate, } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHouse, faBars } from '@fortawesome/free-solid-svg-icons';
 import "./App.css";
 
 function HomePage() {
   return (
     <>
-      <h1>Home Page</h1>
-      <div id="header"></div>
+      <div className="header">
+        <h1>Home Page</h1>
+        <div id="bars"><FontAwesomeIcon icon={faBars} /></div>
+      </div>
     </>
   );
 }
