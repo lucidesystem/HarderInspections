@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faPhone,
@@ -9,8 +9,9 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 const Layout = ({ children }) => {
-  const location = useLocation();
-  const hideFooter = location.pathname === '/about';
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const closeSidebar = () => setSidebarOpen(false);
 
   return (
     <div className="landing-container">
@@ -99,33 +100,37 @@ const Layout = ({ children }) => {
           </ul>
         </aside>
       </header>
+
       <main>{children}</main>
-      {!hideFooter && (
-        <footer className="main-footer">
-          <div className="container">
-            <div className="footer-content">
-              <div className="footer-section">
-                <h4>Harder Home Inspections</h4>
-                <p>Newton, Kansas</p>
-                <p>Phone: 316-284-3811</p>
-              </div>
-              <div className="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                  <li><Link to="/">Home</Link></li>
-                  <li><Link to="/about">About</Link></li>
-                  <li><Link to="/services">Services</Link></li>
-                  <li><Link to="/radon">Radon</Link></li>
-                  <li><Link to="/schedule">Schedule</Link></li>
-                </ul>
-              </div>
+
+      <footer className="main-footer">
+        <div className="container">
+          <div className="footer-content">
+            <div className="footer-section">
+              <h4>Harder Home Inspections</h4>
+              <p>Newton, Kansas</p>
+              <p>Phone: 316-284-3811</p>
             </div>
-            <div className="footer-bottom">
-              <p>&copy; {new Date().getFullYear()} Harder Home Inspections. All rights reserved.</p>
+
+            <div className="footer-section">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/services">Services</Link></li>
+                <li><Link to="/radon">Radon</Link></li>
+                <li><Link to="/schedule">Schedule</Link></li>
+              </ul>
             </div>
           </div>
-        </footer>
-      )}
+
+          <div className="footer-bottom">
+            <p>
+              &copy; {new Date().getFullYear()} Harder Home Inspections. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

@@ -751,6 +751,7 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
     position: fixed;
     top: 0;
     left: 0;
+    display: block;
 
     width: 280px;
     height: 100vh;
