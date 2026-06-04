@@ -1,5 +1,4 @@
 import React from 'react';
-import './LandingPage.css'; // Reuse common styles
 
 const About = () => {
   return (

@@ -1,7 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faClipboardCheck, faShieldHalved, faCalendarCheck } from '@fortawesome/free-solid-svg-icons';
-import './LandingPage.css';
 
 const LandingPage = () => {
   const associations = [
