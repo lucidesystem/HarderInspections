@@ -137,3 +137,9 @@
   --z-modal: 1000;
   --z-toast: 2000;
 }
+
+#root {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}

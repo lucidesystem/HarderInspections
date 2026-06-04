@@ -1,20 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { useState, useEffect } from "react"; // Added hooks
+import {
+  BrowserRouter,
+  Route,
+  Routes,
+  Link,
+  useNavigate,
+} from "react-router-dom";
+import "./App.css";
 
-import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+function HomePage() {
+  return (
+    <>
+      <h1>Home Page</h1>
+      <div id="header"></div>
+    </>
+  );
+}
 
 function App() {
   return (
-    <div>
-      {/* The Routes container determines which component to show based on the URL */}
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomePage />} />
       </Routes>
-    </div>
+    </BrowserRouter>
   );
 }
 
