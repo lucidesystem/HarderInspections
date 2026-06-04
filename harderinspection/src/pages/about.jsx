@@ -75,7 +75,7 @@ const About = () => {
       </div>
 
       <div className="snap-section snap-section--light">
-        <div className="snap-bg-number">03</div>
+        <div className="snap-bg-number-dark">03</div>
         <div className="snap-inner snap-inner--centered">
           <div className="section-label">Coverage Area</div>
           <h2 className="section-heading">Areas Served</h2>
