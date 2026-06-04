@@ -9,8 +9,8 @@ const Layout = ({ children }) => {
       <header className="main-header">
         <div className="top-bar">
           <div className="contact-info">
-            <span><FontAwesomeIcon icon={faPhone} /> <a href="tel:3162843811">316-284-3811</a></span>
-            <span><FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:ddharder4@yahoo.com">ddharder4@yahoo.com</a></span>
+            <span><FontAwesomeIcon icon={faPhone} /> <a href="tel:3162843811">316-284-3811</a> | </span>
+            <span><FontAwesomeIcon icon={faEnvelope} /><a href="mailto:ddharder4@yahoo.com">ddharder4@yahoo.com</a></span>
           </div>
         </div>
         <nav className="navbar">

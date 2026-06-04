@@ -15,6 +15,8 @@ const LandingPage = () => {
     { name: 'Certified Professional Inspector', src: '/images/CertifiedProfessionalInspectorInterNACHI.png' },
   ];
 
+  
+
   return (
     <>
       <section id="home" className="hero-section" style={{ backgroundImage: "url('/images/stone.home2.jpg')" }}>
