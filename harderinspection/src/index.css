@@ -355,7 +355,7 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
 }
 
 .snap-section--hero {
-  background: linear-gradient(135deg, #f8faff 0%, #e8f0fb 100%);
+  background: #e8f0fb;
 }
 
 .snap-section--light {
