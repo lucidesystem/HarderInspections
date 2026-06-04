@@ -6,6 +6,7 @@ import About from "./pages/about";
 import Radon from "./pages/Radon";
 import Services from "./pages/Services"
 import Schedule from './pages/Schedule';
+import { Analytics } from "@vercel/analytics/next"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/schedule" element={<Schedule />} />
         </Routes>
       </Layout>
+      <Analytics />
     </BrowserRouter>
   );
 }
