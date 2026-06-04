@@ -10,6 +10,9 @@ function HomePage() {
       <div className="header">
         <h1>Home Page</h1>
         <div id="mobilebars"><FontAwesomeIcon icon={faBars} /></div>
+        <div className="desktopbars">
+          <Link to={"/"}>Home</Link>
+        </div>
       </div>
     </>
   );

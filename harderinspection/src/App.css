@@ -82,12 +82,7 @@
      ========================= */
 
   --font-family:
-    "Söhne",
-    "Inter",
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
+    "Söhne", "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
 
   --font-size-xs: 0.75rem;
@@ -123,17 +118,13 @@
      SHADOWS
      ========================= */
 
-  --shadow-xs:
-    0 1px 2px rgba(26, 20, 18, 0.04);
+  --shadow-xs: 0 1px 2px rgba(26, 20, 18, 0.04);
 
-  --shadow-sm:
-    0 4px 12px rgba(26, 20, 18, 0.08);
+  --shadow-sm: 0 4px 12px rgba(26, 20, 18, 0.08);
 
-  --shadow-md:
-    0 12px 32px rgba(26, 20, 18, 0.12);
+  --shadow-md: 0 12px 32px rgba(26, 20, 18, 0.12);
 
-  --shadow-lg:
-    0 24px 48px rgba(26, 20, 18, 0.16);
+  --shadow-lg: 0 24px 48px rgba(26, 20, 18, 0.16);
 
   /* =========================
      GLASS EFFECTS
@@ -174,24 +165,32 @@
   align-items: center;
   color: black;
 }
-.header h1{
+.header h1 {
   color: var(--color-primary);
 }
 
-/* Mobile Styles */
-@media (max-width: 780px ) {
-  #mobilebars {
-  position: absolute;
-  left: 16px;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  border: 2px solid var(--border-strong);
-  background-color: var(--btn-primary-bg);
-  color: var(--btn-primary-text);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
+#mobilebars {
+  display: none;
 }
+
+#desktopbars {
+  background-color: red;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  #mobilebars {
+    position: absolute;
+    left: 16px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--border-strong);
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+  }
 }
