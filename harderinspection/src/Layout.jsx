@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
           </button>
           <div className="logo">
             <Link to="/" style={{ textDecoration: 'none' }}>
-              <img src="./../public/images/Logo.jpg" alt="" id='headerlogo'/>
+              <img src="./public/images/Logo.jpg" alt="" id='headerlogo'/>
             </Link>
           </div>
 
