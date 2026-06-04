@@ -9,7 +9,7 @@ function HomePage() {
     <>
       <div className="header">
         <h1>Home Page</h1>
-        <div id="bars"><FontAwesomeIcon icon={faBars} /></div>
+        <div id="mobilebars"><FontAwesomeIcon icon={faBars} /></div>
       </div>
     </>
   );
