@@ -12,7 +12,7 @@ const About = () => {
             <p>David's background in the building trades gives him a unique perspective on how homes are constructed and where potential issues might be hidden.</p>
           </div>
           <div className="intro-image">
-            <img src="/images/home.PIC.jpg" alt="David Harder" />
+            <img src="/images/dave.png" alt="David Harder" />
           </div>
         </div>
       </section>
