@@ -11,7 +11,7 @@ const About = () => {
             <p>Serving All of Central Kansas</p>
             <h3>State of Kansas Certified Real Estate Inspector</h3>
             <h2>David Harder</h2>
-            <h2>Phone: <a className="phone-btn" href="tel:3162843811">316-284-3811</a></h2>
+            <h2>Phone:<a className="phone-btn" href="tel:3162843811">316-284-3811</a></h2>
             <h2>Email: <a href="mailto:ddharder4@yahoo.com">ddharder4@yahoo.com</a></h2>
 
             <p style={{ marginTop: '20px' }}>
@@ -40,6 +40,7 @@ const About = () => {
               <li>Member Harvey County Builders and Associates</li>
               <li>International Association of Professional Contractors</li>
             </ul>
+
           </div>
         </div>
       </section>
