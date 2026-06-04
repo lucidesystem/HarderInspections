@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   useEffect(() => {
@@ -67,9 +68,8 @@ const About = () => {
           <p className="quote-text">
             I understand that buying a home is one of the largest investments we make in our lives. It is my commitment to you that you fully understand the condition of the property prior to closing in an effort to help you make a more informed decision as a buyer.
           </p>
-          <div className="quote-icon">&bdquo;</div>
           <div className="hero-divider hero-divider--white hero-divider--center" />
-          <p className="quote-author">- David Harder, Owner &amp; Inspector</p>
+          <p className="quote-author">&#8212; David Harder, Owner &amp; Inspector</p>
           <a className="cta-button-white" href="tel:3162843811">Call Now: 316-284-3811</a>
         </div>
       </div>
@@ -110,6 +110,32 @@ const About = () => {
             <li>Member &mdash; Harvey County Builders and Associates</li>
             <li>International Association of Professional Contractors</li>
           </ul>
+        </div>
+      </div>
+
+      <div className="snap-section snap-section--footer">
+        <div className="snap-inner snap-inner--centered">
+          <div className="about-footer">
+            <div className="about-footer-col">
+              <h4>Harder Home Inspections</h4>
+              <p>Newton, Kansas</p>
+              <p>Phone: <a href="tel:3162843811">316-284-3811</a></p>
+              <p>Email: <a href="mailto:ddharder4@yahoo.com">ddharder4@yahoo.com</a></p>
+            </div>
+            <div className="about-footer-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/services">Services</Link></li>
+                <li><Link to="/radon">Radon</Link></li>
+                <li><Link to="/schedule">Schedule</Link></li>
+              </ul>
+            </div>
+          </div>
+          <div className="about-footer-bottom">
+            <p>&copy; {new Date().getFullYear()} Harder Home Inspections. All rights reserved.</p>
+          </div>
         </div>
       </div>
 

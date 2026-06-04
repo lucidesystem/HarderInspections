@@ -263,6 +263,55 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
   color: #888;
 }
 
+.snap-section--footer {
+  background-color: var(--dark-grey);
+  color: var(--white);
+  height: calc(100vh - 70px);
+}
+
+.about-footer {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 700px;
+}
+
+.about-footer-col h4 {
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+  color: var(--white);
+}
+
+.about-footer-col p,
+.about-footer-col li {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  list-style: none;
+}
+
+.about-footer-col a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.about-footer-col a:hover {
+  color: var(--white);
+}
+
+.about-footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+}
+
 .snap-container {
   height: calc(100vh - 70px);
   overflow-y: scroll;
@@ -306,7 +355,7 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
 }
 
 .snap-section--hero {
-  background: linear-gradient(135deg, #f8faff 0%, #e8f0fb 100%);
+  background: #e8f0fb;
 }
 
 .snap-section--light {
