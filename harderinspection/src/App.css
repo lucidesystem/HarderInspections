@@ -3,39 +3,39 @@
      BACKGROUNDS
      ========================= */
 
-  --bg-app: #f8fafc;
-  --bg-surface: rgba(255, 255, 255, 0.7);
-  --bg-elevated: rgba(255, 255, 255, 0.9);
+  --bg-app: #f5f0eb;
+  --bg-surface: rgba(250, 246, 241, 0.7);
+  --bg-elevated: rgba(255, 252, 248, 0.9);
 
   /* =========================
      TEXT
      ========================= */
 
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --text-muted: #64748b;
+  --text-primary: #1a1412;
+  --text-secondary: #5c4f47;
+  --text-muted: #7a6e68;
 
   /* =========================
      BORDERS
      ========================= */
 
-  --border-subtle: rgba(15, 23, 42, 0.06);
-  --border-default: rgba(15, 23, 42, 0.12);
-  --border-strong: rgba(15, 23, 42, 0.18);
+  --border-subtle: rgba(26, 20, 18, 0.06);
+  --border-default: rgba(26, 20, 18, 0.12);
+  --border-strong: rgba(26, 20, 18, 0.18);
 
   /* =========================
      BRAND COLORS
      ========================= */
 
-  --color-primary: #2563eb;
-  --color-primary-hover: #1d4ed8;
-  --color-primary-soft: rgba(37, 99, 235, 0.12);
+  --color-primary: #cc785c;
+  --color-primary-hover: #b8634a;
+  --color-primary-soft: rgba(204, 120, 92, 0.12);
 
-  --color-secondary: #0f172a;
-  --color-secondary-hover: #1e293b;
+  --color-secondary: #1a1412;
+  --color-secondary-hover: #2d2420;
 
-  --color-accent: #14b8a6;
-  --color-accent-hover: #0d9488;
+  --color-accent: #c96442;
+  --color-accent-hover: #b05535;
 
   /* =========================
      BUTTONS
@@ -57,31 +57,32 @@
      INPUTS
      ========================= */
 
-  --input-bg: rgba(255, 255, 255, 0.8);
-  --input-border: rgba(15, 23, 42, 0.12);
+  --input-bg: rgba(255, 252, 248, 0.8);
+  --input-border: rgba(26, 20, 18, 0.12);
   --input-border-focus: var(--color-primary);
-  --input-placeholder: #94a3b8;
+  --input-placeholder: #a89990;
 
   /* =========================
      STATUS
      ========================= */
 
-  --success: #16a34a;
-  --warning: #d97706;
-  --danger: #dc2626;
+  --success: #2d7a4f;
+  --warning: #c47f17;
+  --danger: #c0392b;
 
   /* =========================
      ACCENT SURFACES
      ========================= */
 
-  --primary-soft: rgba(37, 99, 235, 0.08);
-  --accent-soft: rgba(20, 184, 166, 0.08);
+  --primary-soft: rgba(204, 120, 92, 0.08);
+  --accent-soft: rgba(201, 100, 66, 0.08);
 
   /* =========================
      TYPOGRAPHY
      ========================= */
 
   --font-family:
+    "Söhne",
     "Inter",
     system-ui,
     -apple-system,
@@ -123,16 +124,16 @@
      ========================= */
 
   --shadow-xs:
-    0 1px 2px rgba(15, 23, 42, 0.04);
+    0 1px 2px rgba(26, 20, 18, 0.04);
 
   --shadow-sm:
-    0 4px 12px rgba(15, 23, 42, 0.08);
+    0 4px 12px rgba(26, 20, 18, 0.08);
 
   --shadow-md:
-    0 12px 32px rgba(15, 23, 42, 0.12);
+    0 12px 32px rgba(26, 20, 18, 0.12);
 
   --shadow-lg:
-    0 24px 48px rgba(15, 23, 42, 0.16);
+    0 24px 48px rgba(26, 20, 18, 0.16);
 
   /* =========================
      GLASS EFFECTS
@@ -163,25 +164,28 @@
   padding: 0;
   margin: 0;
   width: 100%;
-  background-color: var(--color-bg);
+  background-color: var(--bg-app);
 }
 
 .header {
-  background-color: red;
+  background-color: var(--bg-elevated);
   display: flex;
   justify-content: center;
   align-items: center;
+  color: black;
 }
 
 #bars {
   position: absolute;
-  background-color: black;
   left: 16px;
-  height: 30px;
-  width: 30px;
-  text-align: center;
-  align-items: center;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
-  border: 1px solid var(--color-bg-secondary);
-  background-color: var(--color-danger);
+  border: 2px solid var(--border-strong);
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
 }
