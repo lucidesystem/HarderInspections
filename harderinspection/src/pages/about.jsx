@@ -11,7 +11,7 @@ const About = () => {
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.05 }
     );
 
     document.querySelectorAll('.snap-section').forEach((el) => observer.observe(el));
