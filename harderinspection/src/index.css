@@ -525,6 +525,7 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
   background: var(--primary-blue);
   color: var(--white) !important;
   border-radius: 30px;
+  border: none;
   text-decoration: none !important;
   font-weight: 600;
   font-size: 0.95rem;
@@ -1421,4 +1422,59 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
   .svc-icon-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .svc-icon-card { padding: 20px 10px 16px; }
   .svc-checklist { grid-template-columns: 1fr; }
+}
+
+#scheduleDiv {
+  background-color: var(--light-grey);
+  position: absolute;
+  z-index: 100000;
+  max-width: 400px;
+  max-height: 250px;
+  border-radius: 20px;
+  width: 95%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#scheduleDivBack {
+  background-color: var(--light-grey);
+  position: absolute;
+  z-index: 100000;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.scheduleBtn {
+  width: 100%;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  background-color: #004a99;
+  margin: 20px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+.scheduleBtnClose {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+}
+
+#scheduleDiv a {
+  width: 90%;
+  margin: 0;
 }
