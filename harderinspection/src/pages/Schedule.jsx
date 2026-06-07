@@ -4,7 +4,6 @@ const Schedule = () => {
   return (
     <div className="landing-container">
 
-      {/* ── INTRO ── */}
       <section className="svc-intro-section">
         <div className="container">
           <div className="svc-intro-inner" style={{ margin: '0 auto', textAlign: 'center' }}>
@@ -21,7 +20,6 @@ const Schedule = () => {
         </div>
       </section>
 
-      {/* ── PHOTO + CONTACT (side by side, centered on page) ── */}
       <section style={{ background: 'var(--white)', padding: '70px 0' }}>
         <div className="container">
           <div style={{
@@ -33,7 +31,6 @@ const Schedule = () => {
             flexWrap: 'nowrap',
           }}>
 
-            {/* Photo */}
             <img
               src="/images/dave.png"
               alt="David Harder"
@@ -48,7 +45,6 @@ const Schedule = () => {
               }}
             />
 
-            {/* Contact info — left-aligned text inside the column */}
             <div style={{ textAlign: 'left' }}>
               <p className="section-label">Your Inspector</p>
               <h2 style={{ fontSize: '2rem', color: 'var(--primary-blue)', marginBottom: '4px' }}>David Harder</h2>
@@ -98,7 +94,6 @@ const Schedule = () => {
         </div>
       </section>
 
-      {/* ── PHOTO BANNER CTA ── */}
       <section style={{
         backgroundImage: 'url(/images/HouseTrees.png)',
         backgroundSize: 'cover',
