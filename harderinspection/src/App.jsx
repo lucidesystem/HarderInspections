@@ -19,7 +19,6 @@ function App() {
           <Route path="/schedule" element={<Schedule />} />
         </Routes>
       </Layout>
-      <Analytics />
     </BrowserRouter>
   );
 }
