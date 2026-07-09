@@ -31,7 +31,7 @@ const LandingPage = () => {
 
       <section className="intro-section">
         <div className="container">
-          <div className="intro-text">
+          <div className="section-title">
             <h3>Harder Home Inspections - David Harder</h3>
             <p>A home inspection is a non-invasive, visual examination of the accessible areas of a residential property. It is designed to identify defects within specific systems and components that are detrimental to the value of the home and/or represent a health or safety risk to its occupants.</p>
           </div>
