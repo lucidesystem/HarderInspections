@@ -440,11 +440,9 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
 }
 
 .intro-image {
-  flex: 0 0 auto;
   width: 40%;
   max-width: 380px;
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
 }
 
 .intro-image img {
