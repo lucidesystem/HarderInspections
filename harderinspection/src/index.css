@@ -442,6 +442,8 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
   flex: 0 0 auto;
   width: 40%;
   max-width: 380px;
+  display: flex;
+  justify-content: center;
 }
 
 .intro-image img {
@@ -451,6 +453,8 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
   object-position: top;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-info {
