@@ -436,6 +436,7 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
 .snap-inner--split {
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
 .intro-image {
@@ -955,13 +956,6 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
   width: 100px;
 }
 
-
-/* ================================================================
-   SERVICES PAGE ADDITIONS — paste at bottom of index.css
-   All new classes prefixed svc- to avoid conflicts.
-   ================================================================ */
-
-/* ── INTRO ──────────────────────────────────────────────────────── */
 .svc-intro-section {
   background-color: var(--primary-blue);
   padding: 64px 0;
@@ -978,13 +972,11 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
   text-align: center;
 }
 
-/* ── SHARED HEADING TWEAK ───────────────────────────────────────── */
 .svc-section-heading-dark {
   color: var(--dark-grey);
   margin-bottom: 40px;
 }
 
-/* ── WHAT WE INSPECT ────────────────────────────────────────────── */
 .svc-what-section {
   padding: 80px 0 60px;
   background-color: var(--white);
@@ -1000,7 +992,6 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
   text-align: center;
 }
 
-/* 8-card icon grid */
 .svc-icon-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1044,7 +1035,6 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
   line-height: 1.3;
 }
 
-/* full checklist */
 .svc-checklist-wrap {
   background: var(--light-grey);
   border-left: 4px solid var(--primary-blue);
@@ -1084,7 +1074,6 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
   flex-shrink: 0;
 }
 
-/* ── REAL FINDINGS ──────────────────────────────────────────────── */
 .svc-findings-section {
   background-color: var(--dark-grey);
   padding: 80px 0;
@@ -1183,7 +1172,6 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
   line-height: 1.7;
 }
 
-/* ── PRICING ────────────────────────────────────────────────────── */
 .svc-pricing-section {
   background-color: var(--light-grey);
   padding: 80px 0;
@@ -1230,7 +1218,6 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
   background: #eef4ff;
 }
 
-/* visual separator before add-ons */
 .svc-pricing-divider {
   border-top: 3px solid var(--primary-blue) !important;
 }
@@ -1253,7 +1240,6 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
   white-space: nowrap;
 }
 
-/* ── TRUST STRIP ────────────────────────────────────────────────── */
 .svc-trust-section {
   background-color: var(--primary-blue);
   padding: 48px 0;
@@ -1296,7 +1282,6 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
   background: rgba(255,255,255,0.25);
 }
 
-/* ── DOCUMENTS ──────────────────────────────────────────────────── */
 .svc-docs-section {
   padding: 80px 0;
   background-color: var(--white);
@@ -1342,7 +1327,6 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
   flex-shrink: 0;
 }
 
-/* ── CTA ────────────────────────────────────────────────────────── */
 .svc-cta-section {
   background-color: var(--secondary-blue);
   padding: 80px 0;
@@ -1376,9 +1360,6 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
   background-color: rgba(255,255,255,0.9) !important;
 }
 
-/* ================================================================
-   MOBILE  (≤ 768px)
-   ================================================================ */
 @media (max-width: 768px) {
   .svc-intro-section { padding: 44px 0; }
   .svc-intro-text    { font-size: 1rem; }
@@ -1389,7 +1370,6 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
   .svc-docs-section,
   .svc-cta-section { padding: 52px 0; }
 
-  /* icon grid: 2 cols on tablet, 2 on phone */
   .svc-icon-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 14px;
@@ -1397,7 +1377,6 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
 
   .svc-checklist-wrap { padding: 20px 18px; }
 
-  /* findings: stack on mobile */
   .svc-findings-grid {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -1405,20 +1384,16 @@ h2 a[href^="tel:"]:hover { text-decoration: none; }
 
   .svc-finding-img-wrap { height: 190px; }
 
-  /* pricing */
   .svc-pricing-label,
   .svc-pricing-price { padding: 11px 14px; font-size: 0.85rem; }
 
-  /* trust strip: 2 across, dividers hidden */
   .svc-trust-inner  { gap: 24px; }
   .svc-trust-divider { display: none; }
   .svc-trust-stat   { padding: 0 20px; }
   .svc-trust-num    { font-size: 1.5rem; }
 
-  /* docs */
   .svc-docs-list { grid-template-columns: 1fr; }
 
-  /* cta */
   .svc-cta-heading { font-size: 1.3rem; }
 }
 
