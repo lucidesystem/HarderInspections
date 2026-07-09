@@ -4,6 +4,41 @@ const Schedule = () => {
   return (
     <div className="landing-container">
 
+      <style>{`
+        .schedule-inspector-row {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 60px;
+          flex-wrap: nowrap;
+        }
+        .schedule-inspector-text {
+          text-align: left;
+        }
+        .schedule-contact-item {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+        }
+        @media (max-width: 768px) {
+          .schedule-inspector-row {
+            flex-direction: column;
+            gap: 30px;
+            text-align: center;
+          }
+          .schedule-inspector-row img {
+            width: 180px !important;
+          }
+          .schedule-inspector-text {
+            text-align: center;
+          }
+          .schedule-contact-item {
+            justify-content: center;
+          }
+        }
+      `}</style>
+
       <section className="svc-intro-section">
         <div className="container">
           <div className="svc-intro-inner" style={{ margin: '0 auto', textAlign: 'center' }}>
@@ -22,20 +57,14 @@ const Schedule = () => {
 
       <section style={{ background: 'var(--white)', padding: '70px 0' }}>
         <div className="container">
-          <div style={{
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: '60px',
-            flexWrap: 'nowrap',
-          }}>
+          <div className="schedule-inspector-row">
 
             <img
               src="/images/dave.png"
               alt="David Harder"
               style={{
                 width: '220px',
+                maxWidth: '100%',
                 borderRadius: '12px',
                 boxShadow: '0 6px 24px rgba(0,0,0,0.15)',
                 objectFit: 'cover',
@@ -45,7 +74,7 @@ const Schedule = () => {
               }}
             />
 
-            <div style={{ textAlign: 'left' }}>
+            <div className="schedule-inspector-text">
               <p className="section-label">Your Inspector</p>
               <h2 style={{ fontSize: '2rem', color: 'var(--primary-blue)', marginBottom: '4px' }}>David Harder</h2>
               <p style={{ color: '#666', marginBottom: '4px' }}>State of Kansas Certified Real Estate Inspector</p>
@@ -54,7 +83,7 @@ const Schedule = () => {
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
 
-                <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+                <div className="schedule-contact-item">
                   <div style={{
                     width: '44px', height: '44px', borderRadius: '50%',
                     background: 'var(--primary-blue)', display: 'flex',
@@ -70,7 +99,7 @@ const Schedule = () => {
                   </div>
                 </div>
 
-                <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+                <div className="schedule-contact-item">
                   <div style={{
                     width: '44px', height: '44px', borderRadius: '50%',
                     background: 'var(--primary-blue)', display: 'flex',
